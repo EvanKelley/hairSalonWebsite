@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+}
+.main-layout{
+  border: 1px solid red;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  
+}
+
+header {
+  height: 80px;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+header .logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+header .logo h1{
+  margin: 0;
+  background-color: darkblue;
+  color: white;
+  padding: 16px;
+  position: absolute;
+  bottom: -20px;
+  left: 100px;
+}
+header nav {
+  flex: 1;
+  border: 1px solid white;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  text-transform: capitalize;
+}
+
+.hamburger {
+  display: none;
+  border: 1px solid white;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hamburger .line {
+  width: 100%;
+  background-color: black;
+  height: 4px;
+}
+main {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+footer {
+  height: 60px;
+  background-color: teal;
+}
+
+@media (max-width: 598px) {
+  nav {
+    display: none;
+  }
+  div.hamburger {
+    display: flex;
+  }
+}
