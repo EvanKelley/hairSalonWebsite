@@ -2,14 +2,14 @@
 
 main{
   background-color: #F2B53B;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas: 
                       "header"
                       "contact"
                       "footer"
-  ;
+  ; */
 }
 
 
@@ -33,7 +33,7 @@ body {
 }
 a{
   text-decoration: none;
-  color: black;
+  color: #bd3241;
 }
 nav {
   height: 120px;
@@ -236,5 +236,40 @@ h3{
 }
 
 .contact-us{
-  grid-area: "contact";
+  padding: 30px 20px 250px 30px;
 }
+
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+                      "title"
+                      "..."
+                      "info"
+                      "..."
+                      "address"
+                      "..."
+                      "telephone"
+                      "..."
+                      "email";
+} */
+
+/* #contact-title{
+  grid-area: "title";
+}
+
+#contact-info{
+  grid-area: "info";
+}
+
+#address{
+  grid-area: "address";
+}
+
+#telephone{
+  grid-area: "telephone"
+}
+
+#email{
+  grid-area: "email";
+} */
