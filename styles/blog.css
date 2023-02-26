@@ -4,6 +4,7 @@ main{
   background-color: #F2B53B;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-areas: "blog recent-news";
 }
 
 
@@ -67,8 +68,8 @@ ul li {
   list-style: none;
   transition: color 350ms ease-in-out;
 }
-ul li:hover {
-  color: #BD3241;
+ul li a:hover {
+  color: #F2B53B;
   cursor: pointer;
 }
 .hamburger {
@@ -124,7 +125,7 @@ ul li:hover {
 }
 
 .hamburger.hamburger-close span:nth-child(1) {
-  background: rgba(95, 75, 139, 1);
+  background: #F2B53B;
   top: 18px;
   transform: rotate(135deg);
 }
@@ -133,7 +134,7 @@ ul li:hover {
   left: -60px;
 }
 .hamburger.hamburger-close span:nth-child(3) {
-  background: rgba(95, 75, 139, 1);
+  background: #F2B53B;
   top: 18px;
   transform: rotate(-135deg);
 }
@@ -153,7 +154,7 @@ ul li:hover {
     right: 0;
     width: 50%;
     padding-top: 80px;
-    background-color: black;
+    background-color: #3393A6;
     color: white;
     font-size: 2em;
     box-shadow: -7px -1px 13px 0px rgba(0, 0, 0, 0.22);
@@ -220,3 +221,12 @@ footer{
 
 /* BLOG/NEWS STYLES */
 
+
+
+.blog{
+  grid-area: "blog";
+}
+
+.recent-news{
+  grid-area: "recent-news";
+}
