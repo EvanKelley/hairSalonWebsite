@@ -7,7 +7,9 @@ main{
   grid-template-areas: "blog recent-news";
 }
 
-
+h1{
+  font-size: 20px;
+}
 
 /* HEADER/NAV BAR/ BURGER */
 
@@ -225,8 +227,25 @@ footer{
 
 .blog{
   grid-area: "blog";
+  padding: 16px;
+  text-indent: 16px;
 }
 
 .recent-news{
   grid-area: "recent-news";
+  padding: 16px;
+  background-color: #3393A6;
+  border: 2px solid #bd3241;
+  border-radius: 4px;
+  text-indent: 16px;
+}
+
+@media (max-width: 768px){
+  main{
+    background-color: #F2B53B;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "blog" 
+                         "recent-news";
+  }
 }
