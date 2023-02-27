@@ -1,14 +1,10 @@
 /* MAIN BODY */
-
 main{
   background-color: #F2B53B;
   display: grid;
 }
 
-
-
 /* HEADER/NAV BAR/ BURGER */
-
 *{
   margin: 0;
   padding: 0;
@@ -20,12 +16,10 @@ body {
   font-family: 'Merriweather', serif;
   background-color: #EF7E39;
 }
-
 a{
   text-decoration: none;
   color: #bd3241;
 }
-
 nav {
   height: 120px;
   flex: 1;
@@ -36,11 +30,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 15px;
-  /* transition: background-color 0.3s ease; */
 }
-/* nav:hover {
-  background-color: #63A597);
-} */
 nav .logo{
   flex: 2;
   height: 70px;
@@ -63,7 +53,6 @@ nav ul{
   justify-content: space-around;
   align-items: center;
 }
-
 ul li {
   list-style: none;
   transition: color 350ms ease-in-out;
@@ -92,15 +81,12 @@ ul li a:hover {
   left: 0;
   transition: all .25s ease-out;
 }
-
 .hamburger span:nth-child(1) {
   top: 0px;
 }
-
 .hamburger span:nth-child(2) {
   top: 18px;
 }
-
 .hamburger span:nth-child(3) {
   top: 36px;
 }
@@ -112,18 +98,15 @@ ul li a:hover {
   top: 18px;
   transform: rotate(135deg);
 }
-
 .hamburger:hover span:nth-child(2) {
   opacity: 0;
   left: -60px;
 }
-
 .hamburger:hover span:nth-child(3) {
   background: #F2B53B;
   top: 18px;
   transform: rotate(-135deg);
 }
-
 .hamburger.hamburger-close span:nth-child(1) {
   background: #F2B53B;
   top: 18px;
@@ -142,9 +125,6 @@ ul li a:hover {
  nav ul.nav-list {
     display: none;
   }
-/*   nav ul.nav-list.show-mobile-nav {
-    display: flex;
-  } */
   ul.nav-list.show-mobile-nav {
     display: flex;
     flex-direction: column;
@@ -169,14 +149,10 @@ ul li a:hover {
   }
 }
 
-
-
 /* FOOTER / CONNECT  */
-
 div{
   display: block;
 }
-
 header .logo h1{
   margin: 0;
   background-color: #BD3241;
@@ -184,14 +160,9 @@ header .logo h1{
   padding: 30px 20px 30px 20px;
   font-family: 'Arimo', sans-serif;
   font-size: 40px;
-  /* position: absolute;
-  bottom: -20px;
-  left: 180px; */
 }
-
 footer{
   height: 90px;
-  /* flex: 1; */
   background-color: #EF7E39;
   position: relative;
   display: flex;
@@ -200,24 +171,20 @@ footer{
   align-items: center;
   padding: 0px 15px;
 }
-
 #footer > div {
   margin: 0 auto;
   padding: 30px 0px 28px;
   overflow: hidden;
   text-align: center;
 }
-
 #footer div.connect{
   background: #BD3241;
-  /* float: right; */
   height: 18px;
   margin: 0px 20px 0px 150px;
   padding: 22px 20px;
   overflow: hidden;
   width: 144px;
 }
-
 .top{
   display: flex;
   justify-content: center;
@@ -228,20 +195,17 @@ footer{
   margin: 50px auto 28px;
   overflow: hidden;
   padding: 0;
+  grid-area: "top";
 }
-
 .top img{
   width: 250px;
   height: 400px;
   padding: 20px 0px 20px 24px;
 }
-
 .top h2{
   font-size: 34px;
   padding: 0px 24px 0px 24px;
 }
-
-
 .mid-images{
   display: flex;
   justify-content: center;
@@ -252,13 +216,12 @@ footer{
   margin: 50px auto 28px;
   overflow: hidden;
   padding: 0;
+  grid-area: "middleImg";
 }
-
 .mid-images img{
   width: auto;
   height: 400px;
 }
-
 .mid-text{
   max-width: 1100px;
   display: flex;
@@ -270,8 +233,8 @@ footer{
   margin: 50px auto 28px;
   overflow: hidden;
   padding: 8px;
+  grid-area:"midText"
 }
-
 .bottom-left{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -284,8 +247,8 @@ footer{
   padding: 0;
   grid-column: 2/3;
   grid-row: 1/4;
+  grid-area: "bottomLeft";
 }
-
 .bottom-left img{
   width: 140px;
   height: 150px;
@@ -293,23 +256,19 @@ footer{
   grid-row: 1/2;
   padding: 8px;
 }
-
 .bl-text{
   grid-column: 1/3;
   grid-row: 2/3;
   padding: 0px 8px 0px 8px;
 }
-
 .klaus{
   padding-top: 8px;
   font-size: 20px;
 }
-
 .bottom-right{
   grid-column: 4/5;
   grid-row: 1/4;
 }
-
 .br1{
   display: flex;
   justify-content: center;
@@ -320,10 +279,7 @@ footer{
   margin: 50px auto 28px;
   overflow: hidden;
   padding: 8px;
-  /* grid-column: 4/5;
-  grid-row: 1/2; */
 }
-
 .br2{
   display: flex;
   justify-content: center;
@@ -334,18 +290,33 @@ footer{
   margin: 50px auto 28px;
   overflow: hidden;
   padding: 0;
-  /* grid-column: 4/5;
-  grid-row: 3/4; */
 }
-
 .br2 img{
   width: 200px;
   height: 300px;
   padding: 8px;
 }
-
 .bottom{
   display: grid;
   grid-template-columns: 10% auto 5% auto 10%;
   grid-template-rows: 1fr 1fr 1fr;
+}
+@media (max-width: 768px){
+  main{
+    background-color: #F2B53B;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "top" 
+                         "bottomRight";
+  }
+  .mid-images{
+    display: none;
+  } 
+  .mid-text{
+    display: none;
+  }
+  .bottom-left{
+    display: none;
+  }
+
 }

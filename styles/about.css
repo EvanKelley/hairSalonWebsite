@@ -1,13 +1,9 @@
 /* MAIN BODY */
-
 main{
   background-color: #F2B53B;
 }
 
-
-
 /* HEADER/NAV BAR/ BURGER */
-
 *{
   margin: 0;
   padding: 0;
@@ -19,12 +15,10 @@ body {
   font-family: 'Merriweather', serif;
   background-color: #EF7E39;
 }
-
 a{
   text-decoration: none;
   color: #bd3241;
 }
-
 nav {
   height: 120px;
   flex: 1;
@@ -35,11 +29,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 15px;
-  /* transition: background-color 0.3s ease; */
 }
-/* nav:hover {
-  background-color: #63A597);
-} */
+
 nav .logo{
   flex: 2;
   height: 70px;
@@ -141,9 +132,6 @@ ul li a:hover {
  nav ul.nav-list {
     display: none;
   }
-/*   nav ul.nav-list.show-mobile-nav {
-    display: flex;
-  } */
   ul.nav-list.show-mobile-nav {
     display: flex;
     flex-direction: column;
@@ -168,10 +156,7 @@ ul li a:hover {
   }
 }
 
-
-
 /* FOOTER / CONNECT  */
-
 div{
   display: block;
 }
@@ -183,14 +168,10 @@ header .logo h1{
   padding: 30px 20px 30px 20px;
   font-family: 'Arimo', sans-serif;
   font-size: 40px;
-  /* position: absolute;
-  bottom: -20px;
-  left: 180px; */
 }
 
 footer{
   height: 90px;
-  /* flex: 1; */
   background-color: #EF7E39;
   position: relative;
   display: flex;
@@ -209,7 +190,6 @@ footer{
 
 #footer div.connect{
   background: #BD3241;
-  /* float: right; */
   height: 18px;
   margin: 0px 20px 0px 150px;
   padding: 22px 20px;
