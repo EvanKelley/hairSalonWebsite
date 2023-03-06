@@ -211,5 +211,6 @@ h3{
 }
 
 .about-us{
-  padding: 12px 12px 60px 12px;
+  padding: 12px 40px 60px 40px;
+  /* just added a little more space between edge of browser and text */
 }

@@ -5,6 +5,9 @@
     display: grid;
     grid-template-columns: 10% 20% 20% 20% 20% 10%;
     grid-template-rows: 10% 20% 20% 20% 20% 10%;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    /* i was trying to make this work but I couldn't. it's a cool line of code that makes the grid responsive and doesn't care how many images there are. 
+    I'm leaving it because maybe you can find a way to use it on another project */
 }
   #img1{
   grid-column: 2/3;
